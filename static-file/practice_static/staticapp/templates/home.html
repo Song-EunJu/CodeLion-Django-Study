@@ -1,0 +1,20 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style2.css' %}">
+
+    <title>Static Practice</title>
+</head>
+<body>
+    <div>hello static</div>
+    <img src="{% static 'img/image02.png' %}">
+</body>
+</html>
+
+<!-- : html 안에서 쓸 수 있는 장고의 기능 - 템플릿 언어 -->
+<!-- settings.py 에 적어준 STATICFILES_DIRS 경로에 있는 static file들을 모두 html로 load한다-->
